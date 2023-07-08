@@ -7,15 +7,28 @@
 
   /* light mode */
 
-  --primary-color-light-mode: black;
+  --primary-color-light-mode: white;
   --secondary-color-light-mode: ;
-  --ternary-color-light-mode: white;
+  --ternary-color-light-mode: black;
 }
 
 body {
+  /* dark mode */
+
   background-color: var(--primary-color-dark-mode);
   opacity: 1;
-  background-image:  radial-gradient(#dc8888 1.5px, transparent 1.5px), radial-gradient(#dc8888 1.5px, #000000 1.5px);
-  background-size: 60px 60px;
-  background-position: 0 0,30px 30px;
+  background-image: radial-gradient(#ffffff 1.05px, transparent 1.05px),
+    radial-gradient(#ffffff 1.05px, #000000 1.05px);
+  background-size: 42px 42px;
+  background-position: 0 0, 21px 21px;
+
+  /* light mode */
+
+  /* background-color: var(--primary-color-light-mode);
+  opacity: 1;
+  background-image: radial-gradient(#000000 1.05px, transparent 1.05px),
+    radial-gradient(#000000 1.05px, #ffffff 1.05px);
+  background-size: 42px 42px;
+  background-position: 0 0, 21px 21px; */
+  
 }
