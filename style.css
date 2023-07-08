@@ -1,0 +1,21 @@
+:root {
+  /* dark mode */
+
+  --primary-color-dark-mode: black;
+  --secondary-color-dark-mode: ;
+  --ternary-color-dark-mode: white;
+
+  /* light mode */
+
+  --primary-color-light-mode: black;
+  --secondary-color-light-mode: ;
+  --ternary-color-light-mode: white;
+}
+
+body {
+  background-color: var(--primary-color-dark-mode);
+  opacity: 1;
+  background-image:  radial-gradient(#dc8888 1.5px, transparent 1.5px), radial-gradient(#dc8888 1.5px, #000000 1.5px);
+  background-size: 60px 60px;
+  background-position: 0 0,30px 30px;
+}
