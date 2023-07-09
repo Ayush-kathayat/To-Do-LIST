@@ -83,14 +83,17 @@ body {
 
 .mid-left,
 .mid-right {
-  width: 25%;
+  width: 35%;
   background-color: #000000;
   border : solid 5px white;
   padding : 5%;
   border-radius : 15px;
 }
 
+
+
 .mid-left {
+  width : 25%;
   display: flex;
   flex-direction: column;
 }
@@ -169,8 +172,7 @@ body {
   display : flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  justify-content: space-between;
-  margin-top : 8%;
+  margin-top : 18%;
   margin-bottom: 8%;
 }
 
@@ -186,7 +188,10 @@ body {
   color : white;
   transition: opacity 150ms ease-in-out;
   font-family: "Yatra One", cursive;
+}
 
+.input-right{
+  margin-left : 40px;
 }
 
 .input::placeholder {
@@ -267,6 +272,16 @@ li:hover{
 [type="text"]:focus {
   border-width: 3px;
   border-color : white;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+label > h{
+  margin-left: 5px;
 }
 
 .disclaimer{
