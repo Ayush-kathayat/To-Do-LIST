@@ -1,5 +1,4 @@
 :root {
-
   /* dark mode */
   --primary-color-dark-mode: black;
   --secondary-color-dark-mode: ;
@@ -18,19 +17,8 @@ body {
     radial-gradient(#ffffff 1.05px, #000000 1.05px);
   background-size: 42px 42px;
   background-position: 0 0, 21px 21px;
-
-  /* light mode */
-
-  /* background-color: var(--primary-color-light-mode);
-  opacity: 1;
-  background-image: radial-gradient(#000000 1.05px, transparent 1.05px),
-    radial-gradient(#000000 1.05px, #ffffff 1.05px);
-  background-size: 42px 42px;
-  background-position: 0 0, 21px 21px; */
   overflow-x: hidden;
 }
-
-
 
 .nav {
   display: flex;
@@ -40,35 +28,34 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  border : solid 2px white;
-  border-radius : 60px;
-
+  border: solid 2px white;
+  border-radius: 60px;
 }
 
-.logo{
+.logo {
   display: flex;
   width: 15%;
   align-items: center;
-  padding-right : 3%;
-  padding-left  : 3%;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
-.logo-name{
-  font-size : 2rem;
-  font-family: "Yatra One", cursive;  
-}
-
-.user-info{
-  display : flex;
+.logo-name {
+  font-size: 2rem;
   font-family: "Yatra One", cursive;
-  margin-right : 5%;
+}
+
+.user-info {
+  display: flex;
+  font-family: "Yatra One", cursive;
+  margin-right: 5%;
   align-items: center;
 }
-.user-image{
+.user-image {
   height: 55px;
-  width : 55px;
-  margin-left : 5%;
-  border-radius : 50px;
+  width: 55px;
+  margin-left: 5%;
+  border-radius: 50px;
 }
 
 .mid-section {
@@ -78,32 +65,34 @@ body {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top : 5%;
+  margin-top: 5%;
 }
 
 .mid-left,
 .mid-right {
   width: 35%;
   background-color: #000000;
-  border : solid 5px white;
-  padding : 5%;
-  border-radius : 15px;
+  border: solid 5px white;
+  padding: 5%;
+  border-radius: 15px;
 }
 
-
+.MyLogo {
+  fill: white;
+}
 
 .mid-left {
-  width : 25%;
+  width: 25%;
   display: flex;
   flex-direction: column;
 }
 
-.tl{
+.tl {
   transition: opacity 300ms ease-in-out;
 }
 
-.tl:hover{
-  opacity : 0.7;
+.tl:hover {
+  opacity: 0.7;
 }
 
 .task-head {
@@ -117,178 +106,231 @@ body {
   font-family: "Yatra One", cursive;
 }
 
-
-.mid-right{
-  padding-top : 2%;
+.mid-right {
+  padding-top: 2%;
   font-family: "Yatra One", cursive;
   display: flex;
   flex-direction: column;
-
 }
 
-.nav-subtask{
-  display : flex;
+.nav-subtask {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom :15%;
-
+  margin-bottom: 15%;
 }
 
-.subtask-head{
-  font-size : 1.7rem;
-  margin-right : 5%;
+.subtask-head {
+  font-size: 1.7rem;
+  margin-right: 5%;
 }
 
-.subtask-list{
+.subtask-list {
   padding-inline-start: 25px;
-
 }
 
-.deletion{
-  margin-top : 2%;
-  display : flex;
-  color : white;
+.deletion {
+  margin-top: 2%;
+  display: flex;
+  color: white;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-right:8%;
+  margin-right: 8%;
   font-family: "Yatra One", cursive;
-
 }
 
-
-.deletion > h{
-  margin-right : 5%;
+.deletion > h {
+  margin-right: 5%;
   font-size: 1.2rem;
   cursor: pointer;
   transition: opacity 300ms ease-in-out;
 }
 
-.deletion > h:hover{
+.deletion > h:hover {
   opacity: 0.6;
 }
 
-
-.input-task , .input-subtask{
-  display : flex;
+.input-task,
+.input-subtask {
+  display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  margin-top : 18%;
+  margin-top: 18%;
   margin-bottom: 8%;
 }
 
-.input{
+.input {
   width: 300px; /* Adjust the width as needed */
   height: 40px; /* Adjust the height as needed */
   font-size: 16px; /* Adjust the font size as needed */
   background: none;
-  border-top : none;
-  border-left : none;
-  border-right :none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   outline: none;
-  color : white;
+  color: white;
   transition: opacity 150ms ease-in-out;
   font-family: "Yatra One", cursive;
 }
 
-.input-right{
-  margin-left : 40px;
+.input-right {
+  margin-left: 40px;
 }
 
 .input::placeholder {
   color: #999;
   font-family: "Yatra One", cursive;
-
-  
 }
 
-.feather:hover{
+.feather:hover {
   cursor: pointer;
   opacity: 0.6;
 }
 
-li{
-  margin:5%;
+li {
+  margin: 5%;
 }
 
-li:hover{
-  cursor:pointer;
+li:hover {
+  cursor: pointer;
 }
 
-
-.subtask-list > div{
+.subtask-list > div {
   margin-top: 15%;
 }
 
-.sbt{
-  font-size : 1.2rem;
+.sbt {
+  font-size: 1.2rem;
 }
 
-[type = "checkbox"] {
-  opacity : 0;
-  position : absolute;
+[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
 }
 
-.custom-checkbox{
+.custom-checkbox {
   display: inline-block;
   width: 0.8em;
   height: 0.8em;
   cursor: pointer;
   border: 2px solid white;
-  border-radius : 50%;
-  margin-right : 5px;
+  border-radius: 50%;
+  margin-right: 5px;
   transform: scale(1);
   transition: transform 300ms ease-in-out;
 }
 
-.sbt:hover{
+.sbt:hover {
   cursor: pointer;
 }
 
-
-.task:hover{
+.task:hover {
   cursor: pointer;
 }
 
-.task:hover .custom-checkbox{
+.task:hover .custom-checkbox {
   transform: scale(1.2);
 }
 
-
-[type = "checkbox"]:checked + label > .custom-checkbox{
+[type="checkbox"]:checked + label > .custom-checkbox {
   background: white;
-  border-color : white;
+  border-color: white;
   box-shadow: inset 0 0 0 3px black;
-  opacity : 0.4;
+  opacity: 0.4;
 }
 
-[type = "checkbox"]:checked + label > h {
-  opacity : 0.4;
+[type="checkbox"]:checked + label > h {
+  opacity: 0.4;
   text-decoration: line-through;
   transition: text-decoration 150ms ease-in-out;
 }
 
-
-
 [type="text"]:focus {
   border-width: 3px;
-  border-color : white;
+  border-color: white;
 }
 
-label{
+label {
   display: flex;
   align-items: center;
   align-content: center;
 }
 
-label > h{
+label > h {
   margin-left: 5px;
 }
 
-.disclaimer{
-  margin-top : 5%;
+.disclaimer {
+  margin-top: 5%;
   display: flex;
   font-size: 1rem;
   font-family: "Yatra One", cursive;
-  color : var(--ternary-color-dark-mode);
   justify-content: center;
+  color : white;
+}
+
+
+
+.body {
+  /* light mode */
+  background-color: var(--primary-color-light-mode);
+  opacity: 1;
+  background-image: radial-gradient(#000000 1.05px, transparent 1.05px),
+    radial-gradient(#000000 1.05px, #c1dcde 1.05px);
+  background-size: 42px 42px;
+  background-position: 0 0, 21px 21px;
+}
+
+.body > .nav-light {
+  background-color: #faf3e3;
+  border: solid 2px black;
+  color: black;
+}
+
+.body > .nav-light > .logo-light > svg {
+  fill: #000000;
+}
+
+
+.body > .mid-section > .mid-left {
+  background-color: #d5cfe3;
+  color : black;
+}
+
+.body > .mid-section >  .mid-right{
+  background-color: #d5cfe3;
+  color : black;
+}
+
+.body , [type="text"]:focus {
+  border-width: 3px;
+  border-color: black;
+}
+
+.body > .mid-section > .mid-left > .input-task > .input {
+  color : black;
+}
+
+.body > .mid-section > .mid-right > .input-subtask > .input {
+  color : black;
+}
+
+.body > .deletion {
+  color : black;
+}
+
+.body > .disclaimer{
+  color : black;
+}
+
+/* .feather-moon , .feather-sun{
+  display: none;
+} */
+
+.moon > .feather-moon{
+  display : none;
+}
+
+.sun > .feather-sun{
+  display: none;
 }
