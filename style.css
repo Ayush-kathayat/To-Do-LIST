@@ -89,6 +89,7 @@ body {
 
 .tl {
   transition: opacity 300ms ease-in-out;
+  white-space: break-word; 
 }
 
 .tl:hover {
@@ -257,7 +258,7 @@ label {
 }
 
 label > h {
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .disclaimer {
