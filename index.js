@@ -7,57 +7,6 @@ theme.addEventListener("click", () => {
   the_Body.classList.toggle("body");
 });
 
-const My_list = document.querySelector(".task-list"); // this here to be a good parent
-
-const plus_left_btn = document.querySelector(".feather-left-plus"); // our plus
-
-const input = document.querySelector(".input-left");
-
-const create_add_li = () => {
-  const new_task = document.createElement("li");
-  const input_text = input.value;
-
-  new_task.textContent = input_text;
-  new_task.classList.add = "tl";
-
-  My_list.appendChild(new_task);
-  input.value = "";
-};
-
-plus_left_btn.addEventListener("click", () => {
-  const trim = input.value.trim();
-  if (trim === "") {
-    input.value = "";
-  } else {
-    create_add_li();
-  }
-});
-
-input.addEventListener("keydown", (event) => {
-  const trim = input.value.trim();
-
-  if (event.keyCode === 13) {
-    if (trim === "") {
-      input.value = "";
-    } else {
-      create_add_li();
-    }
-  }
-});
-
-// this one is for the subtask nav head
-
-const myList = document.querySelector(".task-list");
-const myHeading = document.querySelector(".subtask-head");
-
-myList.addEventListener("click", (event) => {
-  if (event.target.tagName === "LI") {
-    const liText = event.target.textContent;
-    myHeading.textContent = liText;
-  }
-});
-
-// now below is subtask
 
 // Below is create sbt function
 
@@ -178,9 +127,6 @@ clear_comp.addEventListener("click", () => {
   });
 });
 
-// now here below is code for the all subtasks means whole fucking list this will do
-// two things first the deleting the whole subtasks or whole list and then it will
-// change the subtask nav to the default which is Subtasks
 
 const clear_all = document.querySelector(".clear-all");
 const subtask_nav = document.querySelector(".subtask-head");
@@ -190,7 +136,6 @@ clear_all.addEventListener("click", () => {
   Tasks.forEach((task) => {
     task.remove();
   });
-  subtask_nav.textContent = "SUBTASKS";
   remain.textContent = "";
   task_remain_cnt = 0;
 });
